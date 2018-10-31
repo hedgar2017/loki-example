@@ -13,7 +13,7 @@ public:
     explicit Keyboard();
     Keyboard(const Keyboard &) = delete;
     void operator =(const Keyboard &) = delete;
-    virtual ~Keyboard() = default;
+    virtual ~Keyboard() override = default;
 
     virtual void                        initialize() override;
 

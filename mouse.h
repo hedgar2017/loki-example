@@ -12,7 +12,7 @@ public:
     explicit Mouse();
     Mouse(const Mouse &) = delete;
     void operator =(const Mouse &) = delete;
-    virtual ~Mouse() = default;
+    virtual ~Mouse() override = default;
 
     virtual void                        initialize() override;
     virtual void                        abort() override;
