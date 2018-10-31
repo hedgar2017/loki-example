@@ -1,3 +1,7 @@
+/*
+ * This example was used for putting items into the action in Lineage 2 MMORPG.
+ */
+
 #include <iostream>
 #include <string>
 
@@ -29,16 +33,16 @@ int main()
 
     if (withdraw) {
         for (int i = 0; i < 24; ++i) {
-            mouse.moveCursor(136, 271); // Офис
+            mouse.moveCursor(136, 271);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(56, 315); // Мои шмотки
+            mouse.moveCursor(56, 315);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(283, 350); // Х
+            mouse.moveCursor(283, 350);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(275, 271); // Назад
+            mouse.moveCursor(275, 271);
             mouse.leftButtonClick();
             Sleep(500);
         }
@@ -46,37 +50,37 @@ int main()
 
     if (deposit) {
         bool isCOL = false;
-        mouse.moveCursor(211, 272); // Добавить
+        mouse.moveCursor(211, 272);
         mouse.leftButtonClick();
         Sleep(500);
         for (int i = 0; i < 4; ++i) {
-            mouse.moveCursor(64, 327); // Заточенное
+            mouse.moveCursor(64, 327);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(94, 355); // Первая вещь
+            mouse.moveCursor(94, 355);
             mouse.leftButtonClick();
             Sleep(500);
             if (isCOL) {
-                mouse.moveCursor(234, 405); // Комбо бокс
+                mouse.moveCursor(234, 405);
                 mouse.leftButtonClick();
                 Sleep(500);
-                mouse.moveCursor(186, 440); // Монета удачи
+                mouse.moveCursor(186, 440);
                 mouse.leftButtonClick();
                 Sleep(500);
             }
-            mouse.moveCursor(55, 407); // Количество
+            mouse.moveCursor(55, 407);
             mouse.leftButtonClick();
             Sleep(500);
             keyboard.type(KEY_1);
             keyboard.type(KEY_9);
             Sleep(500);
-            mouse.moveCursor(51, 460); // Продолжить
+            mouse.moveCursor(51, 460);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(52, 470); // Продолжить
+            mouse.moveCursor(52, 470);
             mouse.leftButtonClick();
             Sleep(500);
-            mouse.moveCursor(275, 271); // Назад
+            mouse.moveCursor(275, 271);
             mouse.leftButtonClick();
             Sleep(15000);
         }
