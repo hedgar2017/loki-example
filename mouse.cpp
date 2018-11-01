@@ -5,7 +5,7 @@
 #include "registry.h"
 
 Mouse::Mouse()
-    : Device(L"\\\\?\\HID#UNKNOWN&Col02#1&1aafb3d5")
+    : Device{L"\\\\?\\HID#VARIABLE_6&Col02#1"}
 {}
 
 void Mouse::initialize()

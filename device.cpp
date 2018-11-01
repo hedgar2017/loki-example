@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 Device::Device(PCWSTR deviceInterface)
-    : mp_deviceInterface(deviceInterface)
+    : mp_deviceInterface{deviceInterface}
 {}
 
 void Device::initialize()

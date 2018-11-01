@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 Keyboard::Keyboard()
-    : Device(L"\\\\?\\HID#UNKNOWN&Col04#1&1aafb3d5")
+    : Device{L"\\\\?\\HID#VARIABLE_6&Col04#1"}
 {}
 
 void Keyboard::initialize()
